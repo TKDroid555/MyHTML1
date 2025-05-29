@@ -1,0 +1,30 @@
+body
+{
+    background-image: url(../pics/Gargantua\ LockBG.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+.seperator
+{
+    background-color:rgb(255, 235, 205, 0.25);
+    padding: 35px; /* Padding everything to right*/
+    text-indent: 50px; /*เว้นย่อหน้าแรก*/
+
+    margin: 15px;
+}
+.button 
+{
+  background-color: #4CAF50;     /* Green background */
+  color: white;                  /* White text */
+  padding: 10px 25px;            /* Top/bottom, Left/right padding */
+  border: none;                  /* No border */
+  border-radius: 999px;          /* Capsule shape */
+  font-size: 16px;               /* Font size */
+  cursor: pointer;               /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+}
+
+.button:hover 
+{
+  background-color: #45a049;     /* Darker green on hover */
+}

@@ -1,0 +1,144 @@
+body
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(../pics/grayBG.jpg);
+    background-attachment: fixed;
+    margin: 0 0;
+}
+.top-border
+{
+    position: fixed;
+
+    width: 1550px;
+    height: 50px;
+
+    background-color: rgb(50, 50, 50);
+    color:azure;
+
+    padding: 20px 0px;   
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px 0px 20px black;
+}
+.top-leftside
+{
+    margin-left: 200px;
+
+    font-size: 30px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.top-rightside
+{
+    margin-right: 65px;
+    
+    font-size: 20px;
+
+    display:flex;
+    justify-content: space-between;
+}
+#top-face-pic
+{
+    height: 45px;
+    width: 45px;
+
+    margin-right: 15px;
+
+    border-radius: 999px;
+    object-fit: cover;
+
+    box-shadow: 0px 0px 10px black;
+}
+.top-right-button
+{
+    background-color: transparent;
+    
+    border: none;
+    margin-right: 35px;
+
+    color:azure;
+    font-size: 20px;
+}
+.top-right-button:hover
+{
+    color: rgba(240, 255, 255, 0.7);
+}
+/*--Section 1--*/
+#section-1
+{
+    background-color: transparent;
+
+    height: 650px;
+    padding-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 1;
+}
+#face-section-1
+{
+    border-radius: 999px;
+    object-fit: cover;
+    z-index: 1;
+    
+    height: 420px;
+    width: 420px;
+
+    margin-right: 125px;
+
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+}
+#section-1-left
+{
+    margin-left: 140px;
+    margin-bottom: 0px;
+    width: 750px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+    text-shadow: 0px 2px 2px rgba(50, 50, 50, 0.5);
+}
+.section-1-text
+{
+    margin: 0 0px;
+}
+.contact-button
+{
+    font-size: 25px;
+    padding: 10px 25px;
+    margin-left: 0;
+    margin-top: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color:rgb(39, 39, 39);
+    color:azure;
+    text-shadow: 0 2px 2px black;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+.contact-button:hover
+{
+    background-color:rgb(62, 62, 62);
+    color:rgb(219, 227, 227);
+}
+/*--Section 2--*/
+#section-2
+{
+    background-color: rgb(50, 50, 50);
+    box-shadow: 0 0 20px black;
+    z-index: 2;
+
+    height: 1500px;
+}
