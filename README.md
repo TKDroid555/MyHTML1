@@ -4,4 +4,4 @@ Made by
 * TK
 * First
 
-[Link to index.html](https://tkdroid555.github.io/MyHTML1/)
+<a href="https://tkdroid555.github.io/MyHTML1/" target="_blank">Link to index.html</a>
