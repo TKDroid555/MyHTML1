@@ -73,7 +73,8 @@ body
 {
     background-color: transparent;
 
-    height: 650px;
+    min-height: 650px;
+    height: auto;
     padding-top: 50px;
 
     display: flex;
@@ -90,10 +91,18 @@ body
     
     height: 420px;
     width: 420px;
+    max-height: 420px;
+    max-width: 420px;
 
     margin-right: 125px;
 
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+}
+#face-section-1:hover
+{
+    height: 520px;
+    width: 520px;
+    margin-right: 75px; 
 }
 #section-1-left
 {
