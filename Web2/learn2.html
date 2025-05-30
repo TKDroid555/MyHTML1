@@ -8,18 +8,36 @@
 <img>
 
     <form action="">
-        <label for="first name">First Name:</label> <br>
-        <input type="text" name="First name" placeholder="enter your first name"> <br>
-        <label for="last name">Last Name:</label> <br>
-        <input type="text" name="Last name" placeholder="enter your lastname"> <br>
-        <input type="button" value="Submit">
+        <fieldset>
+            <legend>Personnal Info</legend>
+            <label for="first name">First Name:</label> <br>
+            <input type="text" name="First name" placeholder="enter your first name"> <br>
+            <label for="last name">Last Name:</label> <br>
+            <input type="text" name="Last name" placeholder="enter your lastname"> <br>
+            <input type="button" value="Submit">
+        </fieldset>
 
-        <input type="button" value="buttonn"> <br>
-        <input type="checkbox"> <br>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="Lambo">Lambo</option>
+        </select>
+
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="toyota">
+            <option value="volvo" selected>
+            <option value="Lambo">
+        </datalist>
+
+        <textarea name="" id=""></textarea>
+        <button type="submit">Submit</button>
+        
+        <input type="button" value="button"> <br>
+        <input type="checkbox"> checkbox<br>
         <input type="color"> <br>
         <input type="date"> <br>
         <input type="datetime-local"> <br>
-        <input type="email"> <br>
+        <input type="email">Email <br>
         <input type="file"> <br>
         <input type="hidden"> <br>
         <input type="image"><br>
