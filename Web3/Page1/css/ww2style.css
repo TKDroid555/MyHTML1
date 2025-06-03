@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-image: url("https://images3.alphacoders.com/646/646077.jpg");
+    background-attachment: fixed;
+    background-repeat: false;
+    background-size: cover;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+/*Topic and Content texts*/
+.text
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+.text.topic
+{
+    font-size: 3vw;
+    margin-left: 1vw;
+}
+.text.content
+{
+    font-size: 2vw;
+    text-indent: 3vw;
+}
+.text.content.list
+{
+    text-indent: 0;
+    font-size: 1.75vw;
+
+    display: inline-block;
+    justify-content: left;
+    text-indent: 1vw;
+
+    margin-bottom: 1vw;
+}
+/*Top border*/
+#top-border
+{
+    background-color: rgb(30, 30, 30);
+    
+    height: 4vw;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+/*Top banner*/
+#top-banner
+{
+    background-color: transparent;
+
+    width: 100%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 7vw;
+    align-items: center;
+
+    color:gainsboro;
+    text-shadow: 0 5px 10px black;
+}
+/*Section 1*/
+#section-1
+{
+    background-color: rgb(30, 30, 30);
+    height: auto;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+
+    padding: 25px 0;
+
+    display:flex;
+}
+.chapter-button {
+    flex:1 ;
+    height: 50%;
+    border: none;
+    margin: 0 0;
+    padding: 10px 20px;
+
+    text-shadow: 0 10px 10px black;
+    font-size: 5vw;
+    color: azure;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 0;
+    cursor: pointer;
+
+    box-shadow: 0 0 20px black;
+}
+.chapter-button.wwi
+{
+    background-image: url("https://preview.redd.it/ww1-image-colorization-restoration-attempt-2-v0-584891alecqa1.jpg?width=1080&crop=smart&auto=webp&s=5260ca009aaf23648d0d9a5037cab588071b03b9");
+}
+.chapter-button.wwii
+{
+    background-image: url("https://s.hdnux.com/photos/61/55/72/13033126/4/rawImage.jpg");
+}
+/*Section 2*/
+#section-2
+{
+    background-color: rgb(37, 37, 37);
+    color: azure;
+
+    padding: 2vw 10vw;
+
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
