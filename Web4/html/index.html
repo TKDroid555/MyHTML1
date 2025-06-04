@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Egg Timer</title>
+        <title>Fappy Timer</title>
         <meta charset="utf-8">
         <meta lang="en">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="icon" href="">
+        <link rel="icon" href="../pics/Jarate.png">
     </head>
     <body>
         <div id="inner-bg"> <!--Border-->
@@ -14,24 +14,26 @@
                 <h1>Fappy Timer</h1>
             </div>
             <div class="section s2"> <!--Mode Select-->
-                <button class="button top">
-                    Timer 1
+                <button class="button top left">
+                    <b>Timer</b>
                 </button>
-                <button class="button top">
-                    Timer 2
+                <button class="button top right">
+                    <b>Stopwatch</b>
                 </button>
             </div>
             <div class="section s3"> <!--Timer Graphic-->
-
+                <img src="../pics/Jarate.png" alt="fapping guy" id="timer-graphic">
             </div>
             <div class="section s4"> <!--Timer Time-->
-
+                <span id="main-timer">00:00:00</span>
             </div>
-            <div class="section s5"> <!--Start / Pause Button-->
-
-            </div>
-            <div class="section s6"> <!--Reset Button-->
-
+            <div class="section s5"> <!--Start / Reset Button-->
+                <button class="button bottom left">
+                    <b>Start</b>
+                </button>
+                <button class="button bottom right">
+                    <b>Reset</b>
+                </button>
             </div>
         </div>
     </body>
