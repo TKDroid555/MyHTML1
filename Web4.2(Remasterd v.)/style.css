@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Permanent+Marker&display=swap');* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #f5f5f7;
+
+
+}
+
+
+.topbar {
+    height: 80px;
+    outline: 5px solid red;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative; /* Needed for absolute positioning */
+    z-index: 1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    .menu {
+        margin-right: 90%;
+        position:relative;
+
+        button {
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    .Mode {
+        position: absolute;
+        
+        
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+            
+            
+
+        img {
+            width: 30px;
+            height: auto;
+            
+      }
+    }
+  }
+}
+
+.Name {
+    font-family: "Caveat", cursive;
+    position: absolute;
+    font-size: 40px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    color: rgb(21, 21, 20); 
+    display: flex;
+    margin-top: 300px;
+    .highlight {
+         color: #7e7971;
+    }
+    
+
+}
