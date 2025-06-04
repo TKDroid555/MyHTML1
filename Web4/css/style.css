@@ -1,0 +1,130 @@
+<<<<<<< HEAD
+=======
+body
+{
+    background-color:#6f6d65; /*F8F4E1 FEBA17 74512D 4E1F00*/
+    margin: 0;
+    padding: 2.5vh 0;
+
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#inner-bg
+{
+    background-color:rgba(248, 244, 225); 
+    width: 90vw;
+    max-width: 500px;
+    height: 90vh;
+
+    box-shadow: 0 0 2px rgba(59, 59, 59, 0.4);
+    border-radius: 50px;
+    border: none;
+
+    padding: 2.5vh 0;
+    margin: 0 5vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section
+{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.section.s1 /*Section 1*/
+{
+    height: auto;
+
+    text-align: center;
+    font-size: 30px;
+    color:#221005;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+
+    margin: 0;
+}
+.section.s2 /*Section 2*/
+{
+    height: 10%;
+
+    font-size: 10px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.button
+{
+    background-color: #534333;
+
+    border: none;
+    padding: 2vh 0;
+    border-radius: 99px;
+
+    min-width: 120px;
+    width: auto;
+
+    color:#d8d7cf;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.75);
+}
+.button:hover
+{
+    background-color: #776655;
+    cursor: pointer;
+}
+.section.s3 /*Section 3*/
+{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+#timer-graphic
+{
+    height: auto;
+    width: 25%;
+}
+.section.s4 /*Section 4*/
+{
+    display: flex;
+    justify-content: center;
+
+    font-size: 30px;
+    color: #32281f;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+.section.s5 /*Section 5*/
+{
+    height: 10%;
+
+    font-size: 10px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.button.bottom.left
+{
+    background-color:green;
+}
+.button.bottom.left:hover
+{
+    background-color:rgb(19, 154, 19);
+}
+.button.bottom.right
+{
+    background-color:rgb(214, 20, 20);
+}
+.button.bottom.right:hover
+{
+    background-color:rgb(255, 62, 62);
+}
+>>>>>>> 6a82dfe22a3c0c7cee5c519d5fea2635a80df12c
