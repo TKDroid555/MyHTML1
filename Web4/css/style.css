@@ -1,34 +1,20 @@
-<<<<<<< HEAD
-=======
 body
 {
     background-color:#86857a; /*F8F4E1 FEBA17 74512D 4E1F00*/
-    margin: 0;
+    margin: 0;                  /*FDF7E4 FAEED1 DED0B6 BBAB8C*/
     padding: 0 0;
+
+    background-image: url(https://i.pinimg.com/736x/33/c1/fb/33c1fb614d6d0d370823614806c22481.jpg);
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#nav-bar
+body::after
 {
-    background-color: #32281f;
-    height: 1vh;
-    width: 100vw;
-
+    content: "";
     position: absolute;
-    z-index: 2;
-
-    box-shadow: 0 2px 5px black;
-
-    text-align: center;
-    padding-top: 2.5vh;
-
-    color:#d8d7cf;
-
-    transition: height 0.5s ease;
-}
-#nav-bar:hover
-{
-    height: 7.5vh;
+    inset: 0;
+    background-color: #333025bb;
+    pointer-events: none;
 }
 #inner-bg
 {
@@ -56,32 +42,35 @@ body
     width: 100%;
     margin-bottom: 5%;
 }
-.section.s1 /*Section 1*/
+.section-s1 /*Section 1*/
 {
     height: auto;
 
     text-align: center;
     font-size: 30px;
-    color:#221005;
+    color:#d8d7cf;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    background-color:#32281f;
 
     margin: 0;
+    padding-bottom: 10px;
 }
-.section.s2 /*Section 2*/
+.section-s2 /*Section 2*/
 {
-    height: 10%;
+    height: 60px;
+    margin-top: 30px;
 
-    font-size: 10px;
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
     
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 10px;
 }
 .button
 {
     background-color: #534333;
+    font-size: 15px;
 
     border: none;
     padding: 2vh 0;
@@ -100,28 +89,77 @@ body
     background-color: #776655;
     cursor: pointer;
 }
-.section.s3 /*Section 3*/
+.section-s3 /*Section 3*/
 {
     display: flex;
     justify-content: center;
+    
+    height: 200px;
 
     margin-top: 10px;
 }
 #timer-graphic
 {
-    height: auto;
+    height: 180px;
     width: 180px;
+    
+    transition: height 0.5s ease;
+    transition: width 0.5s ease;
 }
-.section.s4 /*Section 4*/
+#timer-graphic:hover
+{
+    height: 200px;
+    width: 200px;
+}
+.section-s4 /*Section 4*/
 {
     display: flex;
     justify-content: center;
 
-    font-size: 30px;
+    height: 30px;
+
+    font-size: 40px;
+    font-family: monospace;
     color: #32281f;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
-.section.s5 /*Section 5*/
+.time-text
+{
+    margin: 0;
+}
+.time-input
+{
+    display: inline-block;
+    width: 36.5px;
+    height: 36px;
+
+    margin: 0;
+    position: relative;
+}
+.button.edit-time
+{
+    min-width: 35px;
+    min-height: 35px;
+    width: 35px;
+    height: 35px;
+
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 55%;
+
+    padding: 0 0;
+}
+#time-input-holder
+{
+    position: absolute;
+
+    margin-top: 6px;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 22.5px;
+}
+.section-s5 /*Section 5*/
 {
     height: 10%;
 
@@ -131,22 +169,44 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 10px;
 }
-.button.bottom.left
+.button.bottom-left {background-color:green;}
+.button.bottom-left:hover   {background-color:rgb(19, 154, 19);}
+.button.bottom-mid  {background-color:rgb(17, 155, 209);}
+.button.bottom-mid:hover    {background-color:rgb(19, 168, 227);}
+.button.bottom-right    {background-color:rgb(214, 20, 20);}
+.button.bottom-right:hover  {background-color:rgb(233, 21, 21);}
+.section-s6 /*Section 6*/
 {
-    background-color:green;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    
+    display: block;
+    background-color:#32281f;
+    margin: 0;
 }
-.button.bottom.left:hover
+
+@media(max-width: 480px)
 {
-    background-color:rgb(19, 154, 19);
+    .section-s1
+    {
+        font-size: 25px;
+    }
+    .button.edit-time
+    {
+        margin-left: 200px;
+        margin-top: 60px;
+    }
+    .section-s5 /*Section 5*/
+    {
+        flex-direction: column;
+        margin-top: 60px;
+    }
 }
-.button.bottom.right
+
+.hidden
 {
-    background-color:rgb(214, 20, 20);
+    display:none;
 }
-.button.bottom.right:hover
-{
-    background-color:rgb(255, 62, 62);
-}
->>>>>>> 6a82dfe22a3c0c7cee5c519d5fea2635a80df12c
