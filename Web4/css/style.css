@@ -1,27 +1,49 @@
 body
 {
-    background-color:#6f6d65; /*F8F4E1 FEBA17 74512D 4E1F00*/
+    background-color:#86857a; /*F8F4E1 FEBA17 74512D 4E1F00*/
     margin: 0;
-    padding: 2.5vh 0;
-
-    display: flex;
-    justify-content: center;
+    padding: 0 0;
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#nav-bar
+{
+    background-color: #32281f;
+    height: 1vh;
+    width: 100vw;
+
+    position: absolute;
+    z-index: 2;
+
+    box-shadow: 0 2px 5px black;
+
+    text-align: center;
+    padding-top: 2.5vh;
+
+    color:#d8d7cf;
+
+    transition: height 0.5s ease;
+}
+#nav-bar:hover
+{
+    height: 7.5vh;
 }
 #inner-bg
 {
     background-color:rgba(248, 244, 225); 
     width: 90vw;
     max-width: 500px;
-    height: 90vh;
+    height: 100vh;
 
-    box-shadow: 0 0 2px rgba(59, 59, 59, 0.4);
-    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 0px;
     border: none;
 
-    padding: 2.5vh 0;
-    margin: 0 5vw;
+    padding: 0 0;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -86,7 +108,7 @@ body
 #timer-graphic
 {
     height: auto;
-    width: 25%;
+    width: 180px;
 }
 .section.s4 /*Section 4*/
 {
