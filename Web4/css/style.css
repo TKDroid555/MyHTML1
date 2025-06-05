@@ -100,7 +100,7 @@ body::after
 }
 #timer-graphic
 {
-    height: 180px;
+    height: auto;
     width: 180px;
     
     transition: height 0.5s ease;
@@ -108,8 +108,7 @@ body::after
 }
 #timer-graphic:hover
 {
-    height: 200px;
-    width: 200px;
+    width: 220px;
 }
 .section-s4 /*Section 4*/
 {
