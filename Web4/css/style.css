@@ -179,7 +179,9 @@ body::after
 .section-s6 /*Section 6*/
 {
     height: 10%;
-    position: absolute;
+    width: 90vw;
+    max-width: 500px;
+    position:absolute;
     bottom: 0;
     
     display: block;
@@ -204,8 +206,31 @@ body::after
         margin-top: 60px;
     }
 }
+@media(max-height: 740px)
+{
+    #inner-bg
+    {
+        height: 800px;
+    }
+    body::after
+    {
+        height: 800px;
+    }
+}
 
 .hidden
 {
     display:none;
+}
+.is-green
+{
+    background-color: green;
+}
+.is-green:hover
+{
+    background-color: rgb(1, 165, 1);
+}
+.gray-text
+{
+    color: dimgray ;
 }

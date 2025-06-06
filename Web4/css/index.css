@@ -1,3 +1,7 @@
+*
+{
+  box-sizing: border-box;
+}
 body
 {
     background-color:#86857a; /*F8F4E1 FEBA17 74512D 4E1F00*/
@@ -36,6 +40,8 @@ body::after
     height: 85px;
     background-color: #32281f;
 
+    position: relative;
+
     text-align: center;
     font-size: 50px;
     color:#d8d7cf;
@@ -49,12 +55,13 @@ body::after
     flex-direction: column;
     align-items: center;
 
-    height: 70%;
+    position: relative;
+
+    height: 100%;
     gap: 35px;
 
     margin-top: 50px;
-    padding: 0 15vw;
-    width: 70vw;
+    width: 100%;
 }
 .button
 {
@@ -74,23 +81,13 @@ body::after
 
     position:absolute;
     margin-right: 120px;
-    margin-top: 210px;
+    margin-top: 230px;
 
     transition: width 0.5s ease;
 }
 #feel-good-pic:hover
 {
     width: 400px;
-}
-.foot
-{
-    height: 10%;
-    position: absolute;
-    bottom: 0;
-    
-    display: block;
-    background-color:#32281f;
-    margin: 0;
 }
 
 @media(max-width: 480px)
