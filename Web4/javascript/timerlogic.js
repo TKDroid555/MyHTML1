@@ -42,8 +42,11 @@ function toggleEditTime() {
     else if (!started)
     {
         hrs = parseInt(inputArray[0].value) || 0;
+        if (hrs > 99) {hrs = 99;} else if (hrs < 0) {hrs = 0;}
         min = parseInt(inputArray[1].value) || 0;
+        if (min > 59) {min = 59;} else if (min < 0) {min = 0;}
         sec = parseInt(inputArray[2].value) || 0;
+        if (sec > 59) {sec = 59;} else if (sec < 0) {sec = 0;}
         totalsec = (hrs * 3600) + (min * 60) + sec;
 
         display.textContent = hrs.toString().padStart(2, '0') + ":" + min.toString().padStart(2, '0') + ":" + sec.toString().padStart(2, '0');
