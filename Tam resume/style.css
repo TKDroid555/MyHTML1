@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+* {  
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.tampic img {
+  height: 300px;
+  z-index: 2;
+}
+body {
+  background-color: yellow;
+}
+
+h1 {
+  position: absolute;
+  top: 30px; /* ปรับระยะห่างจากขอบบน */
+  left: 20px; /* ปรับระยะจากซ้าย */
+  font-family: "Charmonman", cursive;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  color: white;
+}
+h2  {
+  top: 2.5%;
+  position: absolute;
+  margin: 0;
+  color: aliceblue;
+  font-family: "Charmonman", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 80%;
+
+  
+}
+.call {
+    top: 5%;
+  }
+.topbar {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  
+}
