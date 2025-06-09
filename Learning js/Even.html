@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body id="myBody">
+  <button onclick="alert('Hello Js')">Click me</button>
+
+  <p id="myText">change this text</p>
+  <button id="myBtn">Click to change text</button>
+  <button id="changecolorBtn">change color</button>
+
+  <script>
+    const button = document.getElementById("myBtn");
+    const changecolorBtn = document.getElementById("changecolorBtn")
+
+    button.addEventListener("click", function () {
+      const myText = document.getElementById("myText");
+      myText.textContent = "The text has been changed";
+    });
+
+    changecolorBtn.addEventListener("mouseover", function() {
+        const myBody = document.getElementById("myBody");
+        myBody.style.backgroundColor = "yellow";
+    })
+
+    changecolorBtn.addEventListener("mouseout", function() {
+        const myBody = document.getElementById("myBody");
+        myBody.style.backgroundColor = "white";
+    })
+  </script>
+</body>
+</html>
