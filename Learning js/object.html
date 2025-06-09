@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Object Literal
+        const car = {
+            make: "Mercedes-Benz",
+            model: "A-Class",
+            year: 2024,
+            // Method
+            displayInfo: function() {
+                console.log(`${this.make} ${this.model}, Year: ${this.year}` )
+            }
+        };
+
+        console.log(car.make);
+        console.log(car.model);
+        car.displayInfo();
+
+        const date = new Date();
+        console.log(date);
+
+        function Car(make, model, year) {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+            this.displayInfo = function() {
+                console.log(`${this.make} ${this.model}, Year: ${this.year}` );
+            }
+        }
+
+        const car1 = new Car("Mercedes-Benz", "S-class", 2024);
+        const car2 = new Car("BMW", "3 Series", 2024);
+        console.log(car1.make);
+        console.log(car2.make);
+        car1.displayInfo
+    </script>/
+</body>
+</html>
