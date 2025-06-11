@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const langs = ["HTML", "CSS", "JS"];//array literal
+        console.log(langs.length);
+        // 1 .push();
+        // 2 .pop();
+        // 3 .shift();
+        // 4 .unshift();
+        console.log(langs.push("Banana")); //add at back
+        console.log(langs.pop());  //remove at back
+        console.log(langs.shift()); //remove at front
+        console.log(langs.unshift("Apple")); //add at front
+        console.log(langs[1] = 100);
+        console.log(langs);
+
+        const cars = new Array("Honda", "Toyota", "Nissan");
+        console.log(cars);
+
+        const concatArrays  = langs.concat(cars); //merge similar to append in python
+        console.log(concatArrays);
+    </script>
+</body>
+</html>
