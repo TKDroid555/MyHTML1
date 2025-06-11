@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //forEach()
+        const numbers = [1, 2, 3, 4, 5]; //for number in number in python // (function(number) is like def brabra(2, 4)   in  python
+        numbers.forEach(function(number){
+            console.log(number)
+        })
+        const number = [1, 2, 3, 4, 5]; //transform all Array
+        const double = number.map(function(num){
+            return num * 2;
+        })
+        console.log(double)
+
+        const list = [1, 2, 3, 4, 5]; //return arry that same as condition
+        const even = list.filter(function(num){
+            return num % 2  === 0;
+        })
+        console.log(even)
+        
+        const allnum = [1, 2, 3, 4, 5]; //loopไล่ไปทีละตัว
+        const sum = allnum.reduce(function(total, number){
+            return total + number;
+        },0);
+        console.log(sum)
+
+        const num_ber = [1, 2, 3, 4, 5];//check  some arry true false ว่าตรงกับconditionรึป่าว
+        const hasEven = number.some(function(number){
+            return number % 2 === 0;
+        })
+        console.log(hasEven); 
+
+        const numb = [-1, 2, 3, 4, 5]; //check  all array true false ว่าตรงกับconditionรึป่าว
+        const allPositive = numb.every(function(number){
+            return number > 0;
+        })
+        console.log(allPositive);
+
+        const nu = [-1, 2, 3, 4, 5];
+        const firstsEven = nu.find(function(number){ // checkว่าตรงกับcondition retyurnarrayแรกที่เจอ
+            return number % 2 === 0;
+        })
+        console.log(firstsEven);
+
+        const n = [1, 2, 3, 4, 5];
+        const firstEvenIndex = n.findIndex(function(number){    // heckว่าตรงกับcondition retyurnindexแรกที่เจอ
+            return number % 2 === 0;
+        })
+        console.log(firstEvenIndex);
+    </script>
+</body>
+</html>
