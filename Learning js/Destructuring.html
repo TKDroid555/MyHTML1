@@ -23,6 +23,18 @@
         const fruits = ["Apple", "Orange", "Mango"];
         let [fruits1, fruits2] = fruits
         console.log(fruits1, fruits2);
+
+        const numbers = [10, 20, 30, 40, 50, 60,];
+        const [num1, num2, ...rest] = numbers;
+        console.log(num1);   
+        console.log(num2);
+        console.log(rest);
+
+        let firstN = "John";
+        let lastN = "Doe";
+
+        [firstN, lastN] = [lastN, firstN] //อันหลังคือค่าตัวแปลจากด้านบน
+        console.log(firstN, lastN);
     </script>
 </body>
 </html>

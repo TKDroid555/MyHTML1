@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            //Block Scope
+            let name = "John Doe";
+            console.log(name);
+        }
+        console.log(name);
+
+        function localfunc() {
+            //Local Scope
+            let carName = "Honda";
+            console.log(carName);
+        }
+        localfunc();
+
+        function myFunction() {
+            var firstName = "John";  ///All of these are fuction scope
+            let lastName = "Doe";
+            const age = 30;
+            console.log(firstName); 
+            console.log(lastName);
+            console.log(age);
+        }
+        //cant call outside
+            // console.log(firstName); cant
+            // console.log(lastName); cant
+            // console.log(age); cant
+        myfunction();
+
+
+    </script>
+</body>
+</html>
