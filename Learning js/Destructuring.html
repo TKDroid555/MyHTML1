@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- let {firstName, lastName} = person;
+    let [name, city] = person; -->
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30
+        };
+
+        let {firstName, lastName, age} = person;
+        console.log(firstName, lastName, age)
+        let {firstName: fn, lastName: ln, age: a, country = "Th"} = person;
+        console.log(fn, ln, a, country)
+
+        const fruits = ["Apple", "Orange", "Mango"];
+        let [fruits1, fruits2] = fruits
+        console.log(fruits1, fruits2);
+    </script>
+</body>
+</html>
