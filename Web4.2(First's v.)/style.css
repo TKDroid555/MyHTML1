@@ -14,13 +14,14 @@ body {
 
 .topbar {
     height: 80px;
-    outline: 5px solid red;
+    outline: 1px solid rgb(0, 0, 0);
     display: flex;
     align-items: center;
     padding: 10px;
     position: relative; /* Needed for absolute positioning */
     z-index: 1;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(241, 236, 236);
     .menu {
         margin-right: 90%;
         position:relative;
@@ -65,4 +66,15 @@ body {
     }
     
 
+}
+.Catgif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12.5%;
+}
+
+.Catgif img {
+    max-width: 100%; /* optional: makes sure your gif doesn't overflow */
+    height: auto;
 }
