@@ -80,3 +80,27 @@ body {
     max-width: 100%; /* optional: makes sure your gif doesn't overflow */
     height: auto;
 }
+
+.timer-container {
+    text-align: center;
+}
+
+.timer {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.controls button {
+    padding: 10px 30px; /* Slightly wider buttons */
+    margin: 0 15px; /* More space between buttons */
+}
