@@ -80,7 +80,7 @@ body {
 
 .Name {
     font-family: "Fredoka", sans-serif;
-    font-size: 3vw;
+    font-size: clamp(28px, 5vw, 40px);;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     color: rgb(21, 21, 20); 
     display: flex;
@@ -90,6 +90,17 @@ body {
          color: #7e7971;
     }
     
+@media (max-width: 768px) {
+  .Name {
+    font-size: 32px; /* Tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .Name {
+    font-size: 24px; /* Mobile */
+  }
+}
 
 }
 .Catgif {
