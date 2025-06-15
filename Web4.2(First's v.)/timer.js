@@ -39,6 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+
+
+
+
+
+    
     controlBtn.addEventListener('click', handleControl);
     updateTimer();
 });

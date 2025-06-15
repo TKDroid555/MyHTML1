@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Exile&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Exile&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Exile&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +14,6 @@ body {
 
 
 }
-
 
 .topbar {
     height: 80px;
@@ -50,18 +50,41 @@ body {
         img {
             width: 30px;
             height: auto;
-            
       }
     }
   }
+    .token {
+        margin-left: 90%;
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        background-color: rgb(203, 134, 45);
+        border-radius: 50px;
+        display: flex;
+       
+  
+        p {
+            padding: 5px;
+            text-align: center; 
+            justify-content: center;
+            color: white;
+        }
+        img {
+            width: 20px;
+            object-fit: contain;
+            
+        }
+    }   
+    
 }
 
 .Name {
-    font-family: "Inter", sans-serif;
+    font-family: "Fredoka", sans-serif;
     font-size: 40px;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     color: rgb(21, 21, 20); 
     display: flex;
+    font-weight: 700;
     margin-top: 1%;
     .highlight {
          color: #7e7971;
@@ -91,7 +114,7 @@ body {
 }
 
 .timer {
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Fredoka", sans-serif;
     font-size: 5rem;
     font-weight: bold;
     color: #333;
