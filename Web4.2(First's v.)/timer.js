@@ -22,14 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 1000);
                 controlBtn.textContent = 'Stop';
                 controlState = 1;
-                controlBtn.style.backgroundColor = '#dc3545'; // Red
                 break;
                 
             case 1: // Stop
                 clearInterval(timer);
                 controlBtn.textContent = 'Reset';
                 controlState = 2;
-                controlBtn.style.backgroundColor = '#ffc107'; // Yellow
                 break;
                 
             case 2: // Reset
@@ -37,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateTimer();
                 controlBtn.textContent = 'Start';
                 controlState = 0;
-                controlBtn.style.backgroundColor = '#28a745'; // Green
                 break;
         }
     }
