@@ -1,0 +1,14 @@
+/* Default style */
+#myDiv {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* New style to apply on button click */
+.newStyle {
+  background-color: coral;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
